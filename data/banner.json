@@ -1,0 +1,19 @@
+{
+	"code": "200",
+	"data": [{
+		"biMark": "3e9.931.1.1a583-1ad38-1a1d5",
+		"imageUrl": "http://haitao.nos.netease.com/NUz8ZZBNvtOV5RA3lvEmT1801122044_960_480.gif",
+		"link": "http://m.kaola.com/activity/h5/40361.shtml"
+	}, {
+		"biMark": "3e9.951.1.19be1-1a39c-1d500",
+		"imageUrl": "http://haitao.nos.netease.com/C0E140q1JQAVGM0F1.13.4aXE2-Z13AXkpzT1801121124_960_480.jpg",
+		"link": "https://m.kaola.com/activity/h5/40476.shtml"
+	}, {
+		"biMark": "3e9.952.1.19f21-1a6d6-1dd53",
+		"imageUrl": "http://haitao.nos.netease.com/DyX54LZRp7lqo0vw1.13.T6Ho1-yQFz6zcQT1801121711_960_480.jpg",
+		"link": "https://m.kaola.com/activity/h5/24963.shtml"
+	}],
+	"desc": "操作成功",
+	"retCode": 0,
+	"success": true
+}
