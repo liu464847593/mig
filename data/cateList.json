@@ -1,0 +1,224 @@
+[
+  {
+    "categorySampleVOList": [
+      {
+        "id": 14085,
+        "name": "洗发护发",
+        "picture": "http://haitao.nosdn3.127.net/ipdskvee87_800_800.jpg"
+      },
+      {
+        "id": 14087,
+        "name": "身体护理",
+        "picture": "http://haitao.nos.netease.com/iwcxo8ce81_800_800.jpg"
+      },
+      {
+        "id": 14090,
+        "name": "口腔护理",
+        "picture": "http://haitao.nos.netease.com/1bf90vvt127_800_800.jpg"
+      },
+      {
+        "id": 14095,
+        "name": "女性护理",
+        "picture": "http://haitao.nos.netease.com/onlinei92dt0cl10745.jpg"
+      },
+      {
+        "id": 14093,
+        "name": "成人用品",
+        "picture": "http://haitao.nosdn3.127.net/iips0i5o38_800_800.jpg"
+      },
+      {
+        "id": 16580,
+        "name": "口罩眼罩",
+        "picture": "http://haitao.nosdn3.127.net/iitz7zbx5_800_800.jpg"
+      }
+    ],
+    "id": 14084,
+    "name": "个人洗护"
+  },
+  {
+    "categorySampleVOList": [
+      {
+        "id": 14166,
+        "name": "进口乳品",
+        "picture": "http://haitao.nos.netease.com/itffzp1a6_800_800.jpg"
+      },
+      {
+        "id": 14168,
+        "name": "坚果零食",
+        "picture": "http://haitao.nos.netease.com/981ebd35c4204620a6f5b57a87249cf11507550812789j8k4tvti10557.jpg"
+      },
+      {
+        "id": 14170,
+        "name": "饼干糖巧",
+        "picture": "http://haitao.nos.netease.com/b00951b5122144f0ab3eac1c2a662bfa1511449118513jacls3ru16373.jpg"
+      },
+      {
+        "id": 14172,
+        "name": "麦片咖啡",
+        "picture": "http://haitao.nos.netease.com/a6f0491d0f014955b4106fa5d03b12651507284204271j8fq3jd813034.jpg"
+      },
+      {
+        "id": 14175,
+        "name": "茶饮酒水",
+        "picture": "http://haitao.nos.netease.com/ba8d109abab647cebe7eeebaf15350881509068711879j998jq9e10085.jpg"
+      },
+      {
+        "id": 14173,
+        "name": "粮油速食",
+        "picture": "http://haitao.nos.netease.com/onlineie9dqczf12493.jpg"
+      }
+    ],
+    "id": 14165,
+    "name": "环球美食"
+  },
+  {
+    "categorySampleVOList": [
+      {
+        "id": 14179,
+        "name": "烹饪厨具",
+        "picture": "http://haitao.nosdn3.127.net/onlineigukkyms10597.jpg"
+      },
+      {
+        "id": 16586,
+        "name": "水具餐具",
+        "picture": "http://pop.nosdn.127.net/4ad31495-f4cb-4209-8ad5-bd51be1297f6"
+      },
+      {
+        "id": 16583,
+        "name": "衣物清洁",
+        "picture": "http://haitao.nosdn4.127.net/irdeu7di8_800_800.jpg"
+      },
+      {
+        "id": 14182,
+        "name": "家庭清洁",
+        "picture": "http://haitao.nos.netease.com/1biksnk2p97_800_800.jpg"
+      },
+      {
+        "id": 14186,
+        "name": "收纳日用",
+        "picture": "http://haitao.nosdn1.127.net/ik3ow9r212_800_800.jpg"
+      },
+      {
+        "id": 14184,
+        "name": "家纺布艺",
+        "picture": "http://haitao.nosdn1.127.net/onlineif5cgy1v10223.jpg"
+      }
+    ],
+    "id": 14178,
+    "name": "家居生活"
+  },
+  {
+    "categorySampleVOList": [
+      {
+        "id": 14202,
+        "name": "新鲜水果",
+        "picture": "http://pop.nosdn.127.net/8fce554e-b23e-4c2b-a851-7ba8b0f29ee1"
+      },
+      {
+        "id": 14204,
+        "name": "水产海鲜",
+        "picture": "http://pop.nosdn.127.net/f23113e5-9ccd-4bc4-8ff8-c93a2a6e4cf5"
+      },
+      {
+        "id": 14206,
+        "name": "肉品禽蛋",
+        "picture": "http://pop.nosdn.127.net/f3b079b2-a38d-4332-962b-46bcdcb1a329"
+      },
+      {
+        "id": 14207,
+        "name": "速冻特产",
+        "picture": "http://pop.nosdn.127.net/594d5d5d-4fac-46c6-af36-070afa56b082"
+      }
+    ],
+    "id": 14201,
+    "name": "生鲜水果"
+  },
+  {
+    "categorySampleVOList": [
+      {
+        "id": 14828,
+        "name": "宠物主粮",
+        "picture": "http://haitao.nosdn3.127.net/ioxv2oj317_800_800.jpg"
+      },
+      {
+        "id": 14830,
+        "name": "宠物零食",
+        "picture": "http://haitao.nosdn5.127.net/iq0nnxh710_800_800.jpg"
+      },
+      {
+        "id": 14832,
+        "name": "宠物美容洗护",
+        "picture": "http://haitao.nos.netease.com/1bnhskunm19_800_800.jpg"
+      },
+      {
+        "id": 14834,
+        "name": "宠物玩具",
+        "picture": "http://haitao.nos.netease.com/iwcyh6re90_800_800.jpg"
+      },
+      {
+        "id": 14836,
+        "name": "宠物日用品",
+        "picture": "http://haitao.nos.netease.com/iwbv8b7n26_800_800.jpg"
+      },
+      {
+        "id": 14838,
+        "name": "宠物医疗保健",
+        "picture": "http://haitao.nos.netease.com/1bjpg7d7p8_800_800.jpg"
+      }
+    ],
+    "id": 14827,
+    "name": "宠物生活"
+  },
+  {
+    "categorySampleVOList": [
+      {
+        "id": 14076,
+        "name": "营养辅食",
+        "picture": "http://haitao.nos.netease.com/1bls7dbjk51_800_800.jpg"
+      },
+      {
+        "id": 14078,
+        "name": "宝宝用品",
+        "picture": "http://haitao.nosdn2.127.net/in2rafu995_800_800.jpg"
+      },
+      {
+        "id": 14079,
+        "name": "孕妈专区",
+        "picture": "http://haitao.nos.netease.com/1bj21fsi477_800_800.jpg"
+      },
+      {
+        "id": 14082,
+        "name": "玩具图书",
+        "picture": "http://haitao.nos.netease.com/1bh28p2sh66_800_800.jpg"
+      }
+    ],
+    "id": 14071,
+    "name": "母婴儿童"
+  },
+  {
+    "categorySampleVOList": [
+      {
+        "id": 14050,
+        "name": "基础护肤",
+        "picture": "http://haitao.nos.netease.com/1bii718tf27_800_800.jpg"
+      },
+      {
+        "id": 14059,
+        "name": "面部清洁",
+        "picture": "http://haitao.nos.netease.com/j026qz2689_800_800.jpg"
+      },
+      {
+        "id": 14061,
+        "name": "防晒修复",
+        "picture": "http://haitao.nos.netease.com/j00jv7xa16_800_800.jpg"
+      },
+      {
+        "id": 14067,
+        "name": "男士护肤",
+        "picture": "http://haitao.nos.netease.com/1blphte1m84_800_800.jpg"
+      }
+    ],
+    "id": 14049,
+    "name": "美容彩妆"
+  }
+]

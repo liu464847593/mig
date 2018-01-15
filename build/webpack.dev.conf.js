@@ -8,11 +8,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
-const express = require('express') 
+const express = require('express')
 const app = express()
 const bannerData = require('../data/banner.json')
 const NavData = require('../data/navList.json')
 const homeGoods = require('../data/home_goods.json')
+const carteList = require('../data/cateList.json')
 
 const apiRoutes = express.Router();
 
@@ -54,6 +55,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       });
       app.get('/api/home_goods', function (req, res) {
         res.json(homeGoods);
+      });
+      app.get('/api/carteList', function (req, res) {
+        res.json(carteList);
       });
     }
   },

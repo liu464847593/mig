@@ -10,6 +10,7 @@ import Classification from './views/Classification'
 import Find from './views/Find'
 import Cart from './views/Cart'
 import Mine from './views/Mine'
+import Login from './views/Login'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,9 @@ const routes = [{
 }, {
   path: '/Mine',
   component: Mine
+},{
+  path: '/login',
+  component: Login
 }]
 
 const router = new VueRouter({

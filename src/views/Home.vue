@@ -2,8 +2,9 @@
   <div>
     <x-header>
       <span>民盈购商城</span>
-      <a slot="right">登录</a>
-      <x-icon slot="overwrite-left" type="navicon" size="35" style="fill:#fff;position:relative;top:-8px;left:-3px;"></x-icon>
+      <a slot="right" class="login" @click="goLogin">登录</a>
+      <x-icon @click="goClass" slot="overwrite-left" type="navicon" size="35"
+              style="fill:#000;position:relative;top:-8px;left:-3px;"></x-icon>
     </x-header>
 
     <swiper :aspect-ratio="480/960" auto>
@@ -39,113 +40,141 @@
 </template>
 
 <script>
-import { XHeader, Tab, TabItem, Swiper, SwiperItem } from 'vux'
+  import {XHeader, Tab, TabItem, Swiper, SwiperItem} from 'vux'
 
-export default {
-  components: {
-    XHeader,
-    Tab,
-    TabItem,
-    Swiper,
-    SwiperItem
-  },
-  data () {
-    return {
-      bannerList: '',
-      navList: '',
-      home_goods: ''
+  export default {
+    components: {
+      XHeader,
+      Tab,
+      TabItem,
+      Swiper,
+      SwiperItem
+    },
+    data () {
+      return {
+        bannerList: '',
+        navList: '',
+        home_goods: ''
+      }
+    },
+    methods: {
+      goClass () {
+        this.$router.push({
+          path: '/Classification'
+        })
+      },
+      goLogin () {
+        this.$router.push({
+          path: '/Login'
+        })
+      }
+    },
+    mounted () {
+      let _this = this
+      this.$http.get('/api/banner').then(res => {
+        _this.bannerList = res.data.data
+      })
+      this.$http.get('/api/navList').then(res => {
+        _this.navList = res.data.data
+      })
+      this.$http.get('/api/home_goods').then(res => {
+        _this.home_goods = res.data.zone_data[0]
+      })
     }
-  },
-  methods: {},
-  mounted () {
-    let _this = this
-    this.$http.get('/api/banner').then(res => {
-      _this.bannerList = res.data.data
-    })
-    this.$http.get('/api/navList').then(res => {
-      _this.navList = res.data.data
-    })
-    this.$http.get('/api/home_goods').then(res => {
-      _this.home_goods = res.data.zone_data[0]
-    })
   }
-}
 </script>
 
 <style lang="less" scoped>
-.swiper-img {
-  img {
-    width: 100%;
-  }
-}
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  .navBox {
-    width: 20%;
-    .imgBox {
-      padding: 10px;
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
+  .vux-header{
+    background-color: #ffffff;
+    .vux-header-title{
+      span{
+        color: #000000;
       }
     }
-    p {
-      font-size: 12px;
-      text-align: center;
-      color: #000000;
+    .vux-header-right{
+      .login{
+        color: #000000;
+      }
     }
   }
-}
+  .swiper-img {
+    img {
+      width: 100%;
+    }
+  }
 
-.goodsWarpper {
-  .goodsBox {
+  .nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 10px 10px 70px 10px;
-    .goods {
-      width: 30%;
-      margin-bottom: 5px;
-      list-style: none;
-      img {
-        height: auto;
-        max-width: 100%;
-      }
-      .description {
-        font-size: 12px;
-        padding: 0 5px;
-        .title {
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: normal;
-        }
-        .price{
-          .actualCurrentPrice{
-            color: #e31436;
-          }
-          .marketPrice{
-            color: #999999;
-            text-decoration: line-through;
-          }
-        }
-        .buy{
+    background-color: #ffffff;
+    padding: 10px 0;
+    .navBox {
+      width: 20%;
+      .imgBox {
+        padding: 0 10px;
+        img {
           display: block;
-          width: 100%;
-          padding: 5px 0;
-          outline: none;
-          border: none;
-          background-color: #e31436;
-          color: #ffffff;
+          max-width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+      p {
+        font-size: 12px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+  }
+
+  .goodsWarpper {
+    .goodsBox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      padding: 10px 10px 70px 10px;
+      .goods {
+        width: 30%;
+        margin-bottom: 5px;
+        list-style: none;
+        background-color: #ffffff;
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+        .description {
+          font-size: 12px;
+          padding: 0 5px;
+          .title {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+          }
+          .price {
+            .actualCurrentPrice {
+              color: #e31436;
+            }
+            .marketPrice {
+              color: #999999;
+              text-decoration: line-through;
+            }
+          }
+          .buy {
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+            outline: none;
+            border: none;
+            background-color: #e31436;
+            color: #ffffff;
+          }
         }
       }
     }
   }
-}
 </style>
