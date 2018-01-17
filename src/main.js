@@ -34,7 +34,7 @@ const routes = [{
 }, {
   path: '/Mine',
   component: Mine
-},{
+}, {
   path: '/login',
   component: Login
 }]

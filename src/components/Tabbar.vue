@@ -22,7 +22,7 @@
       <tabbar-item link="/Cart">
         <img slot="icon" src="../assets/cart.svg">
         <img slot="icon-active" src="../assets/cart-active.svg">
-        <span slot="label">购物</span>
+        <span slot="label">购物车</span>
       </tabbar-item>
 
       <tabbar-item link="/Mine">
