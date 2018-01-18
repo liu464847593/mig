@@ -1,7 +1,7 @@
 <template>
   <div>
     <x-header>
-      <span>民盈购商城</span>
+      <span>商城</span>
       <a slot="right" class="login" @click="goLogin">登录</a>
       <x-icon @click="goClass" slot="overwrite-left" type="navicon" size="35"
               style="fill:#000;position:relative;top:-8px;left:-3px;"></x-icon>
