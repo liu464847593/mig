@@ -1,17 +1,13 @@
 <template>
   <div class="box">
-    <x-header>登录</x-header>
+    <x-header>用户登录<x-icon slot="right" type="ios-home-outline" size="20" @click="goHome()" class="filter-icon"></x-icon></x-header>
 
     <group class="inputPhone">
-      <x-input title="手机号码" type="number" :max="11" placeholder="请输入手机号码" is-type="china-mobile" required></x-input>
-      <x-input title="验证码" placeholder="请输入短信验证码" required>
-        <x-button slot="right" mini class="sendCode">发送验证码</x-button>
-      </x-input>
-
-      <check-icon class="agree" :value.sync="agreeIf" @click="checkAgree">登录即同意<span class="protocol">《民盈购平台服务协议》</span></check-icon>
+      <x-input title="登录名" placeholder="请输入用户名" required v-model="userName"></x-input>
+      <x-input title="密码" placeholder="请输入密码" v-model="userPwd" type="password" required></x-input>
 
       <div class="loginButtonBox">
-        <x-button type="primary" class="loginButton" action-type="submit">登录</x-button>
+        <x-button type="primary" class="loginButton" action-type="submit" @click.native="login">登录</x-button>
       </div>
     </group>
 
@@ -19,7 +15,7 @@
 </template>
 
 <script>
-  import {XHeader, XInput, Group, Cell, XButton, CheckIcon} from 'vux'
+  import {XHeader, XInput, Group, Cell, XButton} from 'vux'
 
   export default {
     components: {
@@ -27,19 +23,36 @@
       XInput,
       Group,
       Cell,
-      XButton,
-      CheckIcon
+      XButton
     },
     data () {
       return {
-        agreeIf: true
+        userName: 'admin',
+        userPwd: '123456',
+        errorTip: false,
+        loginModalFlag: false // 遮罩层
       }
     },
     methods: {
-      checkAgree () {
-        console.log(1)
-        this.agreeIf = !this.agreeIf
+      // 返回首页
+      goHome () {
+        this.$router.push('/')
+      },
+      // 登陆
+      login () {
+        this.$http.post('/users/login', {
+          userName: this.userName,
+          userPwd: this.userPwd
+        }).then(res => {
+          if (res.data.result.userName) {
+            console.log(this.$router)
+            this.$router.go(-1)
+            this.$store.commit('updateUserInfo', res.data.result.userName) // vuex获取登陆昵称
+          }
+        })
       }
+    },
+    mounted () {
     }
   }
 </script>
@@ -53,10 +66,6 @@
       }
     }
     .inputPhone {
-      .weui-cells {
-        margin-top: 0;
-        font-size: 14px;
-      }
       .sendCode {
         color: #ffffff;
         background-color: #ea5a11;

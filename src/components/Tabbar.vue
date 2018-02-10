@@ -13,11 +13,6 @@
         <span slot="label">分类</span>
       </tabbar-item>
 
-      <tabbar-item link="/Find">
-        <img slot="icon" src="../assets/find.svg">
-        <img slot="icon-active" src="../assets/find-active.svg">
-        <span slot="label">发现</span>
-      </tabbar-item>
 
       <tabbar-item link="/Cart">
         <img slot="icon" src="../assets/cart.svg">

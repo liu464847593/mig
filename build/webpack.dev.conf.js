@@ -10,14 +10,6 @@ const portfinder = require('portfinder')
 
 const express = require('express')
 const app = express()
-const bannerData = require('../data/banner.json')
-const NavData = require('../data/navList.json')
-const homeGoods = require('../data/home_goods.json')
-const carteList = require('../data/cateList.json')
-
-const apiRoutes = express.Router();
-
-app.use('/api', apiRoutes);
 
 
 const devWebpackConfig = merge(baseWebpackConfig, {
@@ -46,20 +38,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     watchOptions: {
       poll: config.dev.poll,
     },
-    before(app){
-      app.get('/api/banner', function (req, res) {
-        res.json(bannerData);
-      });
-      app.get('/api/navList', function (req, res) {
-        res.json(NavData);
-      });
-      app.get('/api/home_goods', function (req, res) {
-        res.json(homeGoods);
-      });
-      app.get('/api/carteList', function (req, res) {
-        res.json(carteList);
-      });
-    }
   },
   plugins: [
     new webpack.DefinePlugin({
